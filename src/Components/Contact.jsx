@@ -1,9 +1,47 @@
-import React from "react";
+// import React from "react";
+// import "./Contact.css";
+
+// export default function Contact() {
+//   return (
+//     <div className="contact-page">
+//       <form className="contact-form">
+//         <h2>Contact Form</h2>
+
+//         <label>Name</label>
+//         <input type="text" placeholder="Enter your name" required />
+
+//         <label>Email</label>
+//         <input type="email" placeholder="Enter your email" required />
+
+//         <button type="submit">Submit</button>
+//       </form>
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+import React, { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Contact.css";
 
 export default function Contact() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const id = "contacts"; // must match Navbar button
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
-    <div className="contact-page">
+    <section id="contacts" className="contact-page">
       <form className="contact-form">
         <h2>Contact Form</h2>
 
@@ -15,16 +53,9 @@ export default function Contact() {
 
         <button type="submit">Submit</button>
       </form>
-    </div>
+    </section>
   );
 }
-
-
-
-
-
-
-
 
 
 

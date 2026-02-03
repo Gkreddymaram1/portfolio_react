@@ -6,8 +6,24 @@
   align-items: center;         
   padding: 40px;
   border-radius: 10px;
-  background-color: palevioletred; 
+  background-color: #1f1f2e;
+  /* background-color: palevioletred;  */
   color: yellow;
+
+  /* 🔥 animation added */
+  animation: projectReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 🔥 page entry animation */
+@keyframes projectReveal {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 /* Title */
@@ -15,6 +31,20 @@
   font-size: 36px;
   margin-bottom: 25px;
   text-align: center;
+
+  /* 🔥 subtle title animation */
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* List main styling */
@@ -33,13 +63,27 @@
   padding: 20px;
   border-radius: 12px;
   backdrop-filter: blur(6px);
-  border: 2px solid transparent;      /* default border */
+  border: 2px solid transparent;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+
+  /* 🔥 stagger feel */
+  animation: cardPop 0.5s ease forwards;
+}
+
+@keyframes cardPop {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Hover effect */
 .projects-container ul li:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  border: 2px solid yellow;           /* border color same as hover effect */
+  border: 2px solid yellow;
 }

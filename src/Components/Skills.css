@@ -5,7 +5,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: palevioletred;
+  background-color: #1f1f2e;
+  /* background-color: palevioletred; */
+
+  /* 🔥 MODERN portfolio animation */
+  animation: premiumSlideIn 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 🔥 Premium animation (RIGHT → CENTER + fade + blur) */
+@keyframes premiumSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(140px) scale(0.96);
+    filter: blur(6px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-10px) scale(1.01);
+    filter: blur(0);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
 }
 
 .skills-text {
@@ -15,13 +36,13 @@
   border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
-  width: 90%;           /* increased width */
-  max-width: 1200px;    /* optional max width */
+  width: 90%;
+  max-width: 1200px;
 }
 
 .skills-text:hover {
   border: 3px solid yellow;
-  box-shadow: 0 0 20px rgba(255, 255, 0, 0.7);
+  box-shadow: 0 0 25px rgba(255, 255, 0, 0.8);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -29,11 +50,26 @@
   margin-bottom: 20px;
   font-size: 28px;
   color: blue;
+
+  /* 🔥 subtle text reveal */
+  animation: fadeUp 0.8s ease forwards;
 }
 
-/* TABLE STYLING */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= TABLE STYLING ================= */
+
 .skills-table {
-  width: 100%;           /* table fills wrapper */
+  width: 100%;
   border-collapse: collapse;
   font-size: 18px;
   margin: 0 auto;
@@ -58,7 +94,8 @@
   background-color: white;
 }
 
-/* Responsive for small screens */
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
   .skills-text {
     width: 95%;

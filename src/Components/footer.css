@@ -1,3 +1,40 @@
  a:hover{
     background-color: rgb(255, 8, 0);
   }
+  .footer {
+  background: rgb(43, 150, 226);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* 📱 Mobile devices */
+@media (max-width: 600px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+  }
+}

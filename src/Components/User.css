@@ -6,9 +6,27 @@
   align-items: center;     /* horizontal center */
   text-align: center;
   padding: 20px;
-  background-color: palevioletred;
+  background-color: #1f1f2e;
+  /* background-color: palevioletred; */
   color: red;
+
+
+  /* 🔥 side animation added */
+  animation: slideFromLeft 0.7s ease-in-out;
 }
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
 
 .user-text {
   display: inline-block;           /* wrap content for border */
