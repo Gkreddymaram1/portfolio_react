@@ -4,7 +4,7 @@ import "./Contact.css";
 
 export default function Contact() {
   const location = useLocation();
-
+//commented
   useEffect(() => {
     const id = "contacts"; // must match Navbar button
     const section = document.getElementById(id);
