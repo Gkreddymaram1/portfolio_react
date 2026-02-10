@@ -4,17 +4,17 @@
 // import "./App.css";
 
 // // Layout components
-// import Navbar from "./components/Navbar.jsx";
-// import HeroSection from "./components/Herosection.jsx";
-// import Footer from "./components/Footer.jsx";
+// import Navbar from "./Components/Navbar.jsx";
+// import HeroSection from "./Components/Herosection.jsx";
+// import Footer from "./Components/Footer.jsx";
 
 // // Pages / Sections
-// import Home from "./components/Home.jsx";
-// import About from "./components/About.jsx";
-// import Contact from "./components/Contact.jsx";
-// import User from "./components/User.jsx";
-// import Skills from "./components/Skills.jsx";
-// import Projects from "./components/Projects.jsx";
+// import Home from "./Components/Home.jsx";
+// import About from "./Components/About.jsx";
+// import Contact from "./Components/Contact.jsx";
+// import User from "./Components/User.jsx";
+// import Skills from "./Components/Skills.jsx";
+// import Projects from "./Components/Projects.jsx";
 
 // export default function App() {
 //   return (
@@ -44,17 +44,17 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 // Layout components
-import Navbar from "./components/Navbar.jsx";
-import HeroSection from "./components/Herosection.jsx";
-import Footer from "./components/Footer.jsx";
+import Navbar from "./Components/Navbar.jsx";
+import HeroSection from "./Components/Herosection.jsx";
+import Footer from "./Components/Footer.jsx";
 
 // Pages / Sections
-import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
-import Contact from "./components/Contact.jsx";
-import User from "./components/User.jsx";
-import Skills from "./components/Skills.jsx";
-import Projects from "./components/Projects.jsx";
+import Home from "./Components/Home.jsx";
+import About from "./Components/About.jsx";
+import Contact from "./Components/Contact.jsx";
+import User from "./Components/User.jsx";
+import Skills from "./Components/Skills.jsx";
+import Projects from "./Components/Projects.jsx";
 
 export default function App() {
   return (
