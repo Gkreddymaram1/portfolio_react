@@ -25,7 +25,7 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Gopi</div>
+      <div className="navbar-logo">Portfolio</div>
       <ul className="navbar-menu">
         <li>
           <button onClick={() => scrollToSection("home", "/home")}>Home</button>

@@ -44,17 +44,17 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 // Layout components
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/Herosection";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.jsx";
+import HeroSection from "./components/Herosection.jsx";
+import Footer from "./components/Footer.jsx";
 
 // Pages / Sections
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import User from "./components/User";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
+import User from "./components/User.jsx";
+import Skills from "./components/Skills.jsx";
+import Projects from "./components/Projects.jsx";
 
 export default function App() {
   return (
