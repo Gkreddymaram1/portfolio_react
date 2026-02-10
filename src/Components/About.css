@@ -1,0 +1,139 @@
+.about-container {
+  height: 100vh;                
+  display: flex;
+  justify-content: center;       
+  align-items: center;  
+  background-color: #1f1f2e;
+  /* background-color: palevioletred;          */
+  padding: 20px;
+  text-align: center;
+
+  /* 🔥 page slide + fade animation */
+  animation: aboutSlideIn 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes aboutSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-120px) scale(0.96);
+  }
+  60% {
+    transform: translateX(10px) scale(1.02);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.about-text {
+  display: inline-block;       
+  padding: 20px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+
+  /* 🔥 subtle fade + scale on load */
+  animation: textFade 0.7s ease forwards;
+}
+
+@keyframes textFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.about-text:hover {
+  border: 3px solid yellow;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.about-text h1 {
+  font-size: 36px;
+  color: blueviolet;
+  margin-bottom: 25px;
+
+  /* 🔥 heading subtle rise animation */
+  animation: headingRise 0.7s ease forwards;
+}
+
+@keyframes headingRise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-text p {
+  font-size: 20px;
+  color: blueviolet;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 15px auto;
+
+  /* 🔥 paragraph fade + slight move */
+  animation: paraFade 0.8s ease forwards;
+}
+
+@keyframes paraFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MEDIA QUERIES ================= */
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+  .about-container {
+    height: auto;          
+    min-height: 100vh;     
+    padding-top: 80px;     
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .about-text h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+}
+
+/* 📲 Tablet */
+@media (max-width: 900px) {
+  .about-container {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 70px;
+  }
+
+  .about-text h1 {
+    font-size: 30px;
+  }
+
+  .about-text p {
+    font-size: 18px;
+    max-width: 90%;
+  }
+}
